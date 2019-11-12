@@ -7,7 +7,7 @@ int main() {
     double time = static_cast<double>(l) / v * 60;
     for (int i = 0; i < n; ++i) {
         int x, t; std::cin >> x >> t;
-        if (x <= l) time += t;
+        time += t;
     }
     std::cout << std::fixed << std::setprecision(2) << time;
 }
